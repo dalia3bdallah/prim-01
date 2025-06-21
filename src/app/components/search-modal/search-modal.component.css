@@ -1,0 +1,73 @@
+.srch-container {
+    /* background: var(--dal-color-icon-primary); */
+    background: radial-gradient(var(--dal-color-icon-primary), #65e1bc);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+
+}
+
+a.close-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: calc(2*var(--padding-10));
+    color: #fff;
+    cursor: pointer;
+}
+
+a.close-btn .pi {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.srch-container .container {
+    display: flex;
+    justify-content: center;
+}
+
+.srch-container p-iconfield,
+.srch-container p-button {
+    margin: 5px;
+}
+.tools .p-button-icon-only.p-button-secondary {
+    background: #fff;
+    color: #000;
+}
+
+.srch-container input, .srch-container button {
+    border-radius: var(--border-rounded) !important;
+    height: var(--p-button-icon-only-width);
+}
+
+.srch-container input {
+    width: 100%;
+}
+
+p-iconfield.p-iconfield {
+    width: min(50% ,500px);
+}
+@media (max-width:991px) {
+
+    .srch-container p-iconfield,
+    .srch-container p-button {
+        margin-bottom: 1em !important;
+    }
+
+    .srch-container p-iconfield,
+    .srch-container p-button,
+    .srch-container .p-iconfield .p-inputtext:not(:first-child) {
+        width: 100% !important
+    }
+
+    .srch-container .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

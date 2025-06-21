@@ -1,0 +1,19 @@
+
+
+.feaure-img img {
+    border-radius: var(--border-rounded) var(--border-rounded) 0 0;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.feaure-img {
+    /* background: radial-gradient(#bae0ea, #96ffd15c); */
+}
+
+.feature-title {
+    padding: 1em 2em;
+    font-size: 1.3em;
+}

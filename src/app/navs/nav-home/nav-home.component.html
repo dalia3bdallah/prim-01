@@ -1,0 +1,65 @@
+<header class="header">
+    <div class="logo">
+        <!-- <img src="" alt=""> -->
+        <a routerLink="home"> <div class="logo-text" >{{"logotext"|translate }}</div></a>
+    </div>
+    <div class="btn-toggle">
+        <!-- <button class="d-mobile-block"><span class="pi pi-bars"></span></button> -->
+        <p-button label="" icon="pi pi-bars" variant="outlined" severity="info" id="btn-mobile-menu"
+            (onClick)="onclickbtnmobilemenu()" />
+
+    </div>
+
+    <nav>
+        <ul class="navbar">
+            <li routerLink="home"><a class="nav-link" routerLinkActive="active">{{"home" | translate}}</a></li>
+            <li routerLink="benfits"><a class="nav-link" routerLinkActive="active">{{ "benfits" | translate }}</a></li>
+            <li routerLink="howitworks"><a class="nav-link" routerLinkActive="active">{{"how it works"|translate }}</a>
+            </li>
+            <li routerLink="pricing"><a class="nav-link" routerLinkActive="active">{{ "pricing" | translate}} </a></li>
+            <li routerLink="error"><a class="nav-link" routerLinkActive="active">{{"error!"|translate }} </a></li>
+        </ul>
+    </nav>
+    <div class="end-hdr-tools">
+        <ul class="tools">
+
+            <li id="sl"></li>
+            <li>
+                <div class="lang-group">
+                    <select class="form-select" id="floatingSelectGrid" aria-label="Default select example"
+                        name="select-lang" id="select-lang-id" (change)="changeLang($event)">
+                        <option value="en" [selected]="">english</option>
+                        <option value="ar" [selected]="">العربية</option>
+                    </select>
+                    <span class="pi pi-globe"></span>
+                    <!-- <label for="floatingSelectGrid">{{"language" | translate }}</label> -->
+                </div>
+
+
+
+
+            </li>
+            <li>
+                <p-button icon="pi pi-search" styleClass="m-0" [rounded]="true" severity="secondary" [outlined]="true"
+                    id="searchbtn" (click)="onClickHandler()" />
+            </li>
+
+            <li>
+                <!-- <p-button label="{{'Book A Demo' | translate }}" icon="pi pi-arrow-right" iconPos="right"
+                            [rounded]="true" severity="info" /> -->
+
+                <p-button  routerLink="login" label="{{'sign In' | translate }}" [rounded]="true" severity="info" class="me-2" />
+                <!-- <p-button  routerLink="register" label="{{'sign Up' | translate }}" [rounded]="true" severity="info" /> -->
+                <!-- <p-button label="Profile" icon="pi pi-user" /> -->
+                <!-- <p-toast />
+                <p-splitbutton label="{{'Profile' |translate}}" icon="pi pi-user" badge="2" styleClass="m-0" [rounded]="true"
+                    severity="secondary" [rounded]="true" severity="info" (onClick)="save()" [model]="items" /> -->
+
+            </li>
+        </ul>
+    </div>
+
+</header>
+<div class="search-window">
+    <prm-search-modal />
+</div>

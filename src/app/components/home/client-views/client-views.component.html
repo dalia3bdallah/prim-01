@@ -1,0 +1,106 @@
+<section class="section client-views">
+    <div class="container-fluid">
+        <div class="section-header">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="section-title"           pAnimateOnScroll
+  enterClass="animate__animated animate__fadeInDown"
+  leaveClass="animate__animated animate__fadeInDown">
+                        {{ "See How Al" |translate}}
+                        <br>
+                        {{"Revolutionized Our Client's Success" | translate }}
+
+                    </div>
+                </div>
+                <div class="col-md-6"  pAnimateOnScroll
+  enterClass="animate__animated animate__fadeInDown"
+  leaveClass="animate__animated animate__fadeInDown"
+>
+                    <div class="section-p text-end">
+                        {{"Discover how Al helped clients" | translate }}<br>
+                        {{"increase conversions and" | translate }} <br>
+                         {{"achieve remarkable business growth." | translate }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" pAnimateOnScroll
+  enterClass="animate__animated animate__fadeInDown"
+  leaveClass="animate__animated animate__fadeInDown">
+                <div class="card service">
+
+                    <div class="feature-title">
+                        {{"Brands That Trust Us" | translate }}
+                    </div>
+                    <div class="brands-imgs">
+                        <ul>
+                            <li><a href=""><img src="./imgs/clients/client-1.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-2.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-3.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-4.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-5.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-6.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-8.png" alt="brand name"></a></li>
+                            <li><a href=""><img src="./imgs/clients/client-1.png" alt="brand name"></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-5"pAnimateOnScroll
+  enterClass="animate__animated animate__fadeInUp"
+  leaveClass="animate__animated animate__fadeInUp">
+                <div class="bg-img-container">
+                    <ul class="wt-to-do">
+                        <li>
+                            <span class="pi pi-arrow-up"></span>
+                            <span class="txt"> {{"Conversion Rate Growth" | translate }}</span>
+                        </li>
+                        <li>
+                            <span class="pi pi-arrow-up"></span>
+                            <span class="txt"> {{"User Engagement Metrics" | translate }}</span>
+                        </li>
+                        <li>
+                            <span class="pi pi-arrow-up"></span>
+                            <span class="txt"> {{"Revenue Impact" | translate }}</span>
+                        </li>
+                    </ul>
+                    <div class="bg-img-cnt-title">
+                         {{"How this tool Increased" | translate }}
+                        <br>  {{"Conversions by 40% with Al." | translate }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"  pAnimateOnScroll
+  enterClass="animate__animated animate__fadeInDown"
+  leaveClass="animate__animated animate__fadeInDown"
+>
+                <div class="reviews-block">
+                    <p-carousel [value]="reviewsPro" [numVisible]="1" [numScroll]="1" [circular]="true"
+                        [autoplayInterval]="3000" [responsiveOptions]="responsiveOptions">
+
+                        <ng-template let-review pTemplate="item">
+
+                            <div class="view">
+                                <div class="img-client">
+                                    <img [src]="review.image" alt="{{ review.name }}" class="img-fluid">
+                                </div>
+                                <div class="quote-owner">{{ review.name |translate }}</div>
+                                <div class="quote-text">{{ review.content |translate }}</div>
+                            </div>
+
+
+
+                        </ng-template>
+                    </p-carousel>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

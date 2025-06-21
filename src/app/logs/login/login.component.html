@@ -1,0 +1,197 @@
+
+<div class="section login">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center">
+                    {{"Login" | translate }}
+                </h1>
+                <div class="container">
+                    <form class="row g-3 mb-4" [formGroup]="loginForm" (ngSubmit)="submitLoginForm(loginForm)">
+                        <div class="col-12">
+                            <label for="userNme" class="form-label">{{"UserName" | translate }}</label>
+                            <input type="text" class="form-control form-control-lg" id="usernme" placeholder=""
+                                formControlName="username">
+                            <!-- validation block -->
+                            <div class="text-danger " id="userValidation"
+                                *ngIf="loginForm.get('username')?.errors  && loginForm.get('username')?.touched">
+                                <span *ngIf="loginForm.get('username')?.getError('required')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"required field" | translate }}</span>
+                                </span>
+                                <span *ngIf="loginForm.get('username')?.getError('minlength')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"at least 3 characters incorrect input" | translate }}</span>
+                                </span>
+                                <span *ngIf="loginForm.get('username')?.getError('maxlength')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"maximum lenght 10 characters or incorrect input" | translate }}</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">{{"Email" | translate }}</label>
+                            <input type="email" class="form-control form-control-lg" id="inputEmail4" placeholder=""
+                                formControlName="email">
+                            <!-- validation block -->
+                            <div class="text-danger " id="emailValidation"
+                                *ngIf="loginForm.get('email')?.errors  && loginForm.get('email')?.touched">
+                                <span *ngIf="loginForm.get('email')?.getError('required')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"required field" | translate }}</span>
+                                </span>
+                                <span *ngIf="loginForm.get('email')?.getError('email')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"un-valid E-mail" | translate }}</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputPassword4" class="form-label">{{"Password" | translate }}</label>
+                            <div class="position-relative show-pass">
+                                <input type="password" class="form-control form-control-lg pe-5" id="inputPassword4" placeholder=""
+                                    formControlName="password">
+                                <button class="btn btn-link btn-lg" (click)="onToggleshowpassword()">
+                                    <span class="pi pi-eye" id="toggle-slash"></span></button>
+                            </div>
+                            <!-- validation block -->
+                            <div class="text-danger " id="passwordValidation"
+                                *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched">
+                                <span *ngIf="loginForm.get('password')?.getError('required')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"required field" | translate }}</span>
+                                </span>
+                                <span *ngIf="loginForm.get('password')?.getError('pattern')">
+                                    <i class=" pi pi-exclamation-triangle mx-2"></i>
+                                    <span class="mx-1">{{"must contain (a-z AZ) and (0-9)" | translate }} 
+                                        <br>
+                                    <i class=" pi pi-info-circle mx-2"></i>
+                                    {{"ex:"|translate }}[ 123asd ] </span>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12 ">
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-info btn-block" (click)="showMessageSuccess()"
+                                    [disabled]='loginForm.invalid'>
+                                    {{"Sign in" | translate }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="login-done d-none">
+                        <!-- <img src="/public//gif-done.gif"> -->
+                        <img src="/imgs/ng-16/gif-done.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 show-hint-col "
+                [class]="loginForm.invalid? 'show-hint-col d-block':'show-hint-col d-none'">
+                <div class="hint-block">
+                    <div class="img-hints">
+                        <img src="/imgs/ng-16/login-tips.png" class="img-responsive mb-2">
+                        <div class="h6 text-center mb-4">{{" Let us help you login correct and faster !" | translate }} </div>
+                    </div>
+                    <div class="from-hints-lists">
+                        <div class="dal-hints">
+
+
+                            <ul id="userHintUl"
+                                *ngIf="loginForm.get('username')?.errors  && loginForm.get('username')?.touched">
+                                <div class="hint-title mb-2">{{" user Name must" | translate }} :- </div>
+                                <li class="text-danger"
+                                    [class]="loginForm.get('username')?.getError('required')? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"this field is required,can't be empty" | translate }} </span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('username')?.getError('minlength') || loginForm.get('username')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"contain at least 3 characters" | translate }}</span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('username')?.getError('maxlength') || loginForm.get('username')?.getError('minlength') || loginForm.get('username')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"contain maximum 10 characters" | translate }}</span>
+                                </li>
+
+                            </ul>
+
+                            <ul id="mailHintUl"
+                                *ngIf="loginForm.get('email')?.errors  && loginForm.get('email')?.touched">
+                                <div class="hint-title mb-2"> {{"E-Mail must" | translate }} :- </div>
+                                <li class="text-danger"
+                                    [class]="loginForm.get('email')?.getError('required')? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"Email is Required, can not be empty" | translate }}</span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('email')?.getError('email')) || (loginForm.get('email')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"the mail must be valid like(address[at]example.com)" | translate }}</span>
+                                </li>
+                            </ul>
+                            <ul id="passwordHintUl"
+                                *ngIf="loginForm.get('password')?.errors  && loginForm.get('password')?.touched">
+                                <div class="hint-title mb-2"> {{"password must" | translate }}  :- </div>
+                                <li class="text-danger"
+                                    [class]="loginForm.get('password')?.getError('required')? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"this field is required,can't be empty" | translate }} </span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('password')?.getError('minlength')) || (loginForm.get('password')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"contain at least 3 characters" | translate }}</span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('password')?.getError('maxlength')) || (loginForm.get('password')?.getError('minlength')) || (loginForm.get('password')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"contain maximum 10 characters" | translate }}</span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('password')?.getError('pattern')) || (loginForm.get('password')?.getError('maxlength')) || (loginForm.get('password')?.getError('minlength')) || (loginForm.get('password')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">{{"has a pattern like (123asd)|(3-5 numbers then 3-5 a-z)" | translate }}
+                                    </span>
+                                </li>
+                                <li class="text-danger"
+                                    [class]="(loginForm.get('password')?.getError('pattern')) || (loginForm.get('password')?.getError('maxlength')) || (loginForm.get('password')?.getError('minlength')) || (loginForm.get('password')?.getError('required'))? 'text-danger' :'text-success' ">
+                                    <i class="icon"><span class="pi pi-lightbulb mx-2"></span></i>
+                                    <span class="hl-txt">
+                                        {{"contain the pattern from 3 to 5 (0-9 characters) then containfrom 3 to 5 ((a-z) or (A-Z)characters)" | translate }}
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="success-img"
+                                *ngIf="
+                                    (loginForm.get('username')?.valid && !(loginForm.get('password')?.touched  ||   loginForm.get('email')?.touched)) 
+                                || (loginForm.get('email')?.valid  && !(loginForm.get('password')?.touched  ||  loginForm.get('username')?.touched)) 
+                                || (loginForm.get('password')?.valid &&  !(loginForm.get('username')?.touched  ||   loginForm.get('email')?.touched))">
+                                <img src="/imgs/ng-16/gif-done.gif" alt="" class="mb-2">
+                                <!-- <h1>user name Done ! </h1> -->
+                                <h6 *ngIf="loginForm.get('username')?.valid">{{"username valid" | translate }} !</h6>
+                                <h6 *ngIf="loginForm.get('email')?.valid ">{{"email valid" | translate }}</h6>
+                                <h6 *ngIf="loginForm.get('password')?.valid">{{"password valid" | translate }}</h6>
+                                <h1> {{"Looks Fine ! Go on !" | translate }} </h1>
+
+                            </div>
+
+                            <!-- <div class="success-img" *ngIf="loginForm.get('email')?.valid && !(loginForm.get('password')?.touched || loginForm.get('username')?.touched) ">
+                                    <img src="/imgs/ng-16/gif-done.gif" alt="">
+                                    <h1>email Done ! </h1>
+                                </div>
+                              <div class="success-img" *ngIf="loginForm.get('password')?.valid && !(loginForm.get('username')?.touched || loginForm.get('email')?.touched) ">
+                                    <img src="/imgs/ng-16/gif-done.gif" alt="">
+                                    <h1>password Done ! </h1>
+                                </div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

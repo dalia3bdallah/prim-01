@@ -1,0 +1,390 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "primeicons/primeicons.css"; */
+:root {
+    --hdr-height: 70px;
+    --hdr-li-padding: 10px;
+    --pc-padding-container: 2em;
+    --padding-10: 10px;
+    --border-rounded: 20px;
+    --border-circle: 50%;
+
+    --dal-color-primary: #00c4be;
+    --dal-color-primary-rgb: 0 ,196 ,190;
+    --dal-color-icon-primary: #7aa9a6;
+    --dal-primary-light:#7aa9a62b;
+    --dal-color-icon-primary-hover: #558482;
+    --dal-success-txt: green;
+    --dal-light-gray: #f8f8f8;
+
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(90deg, #fa2c05 0%, #f637e3 50%, #8514f5 100%);
+}
+
+.btn-info {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--dal-color-icon-primary);
+    --bs-btn-border-color: var(--dal-color-icon-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--dal-color-icon-primary-hover);
+    --bs-btn-hover-border-color: var(--dal-color-icon-primary-hover);
+    --bs-btn-focus-shadow-rgb: 11, 172, 204;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: var(--dal-color-icon-primary-hover);
+    --bs-btn-active-border-color: var(--dal-color-icon-primary-hover);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--dal-color-icon-primary);
+    --bs-btn-disabled-border-color: var(--dal-color-primary);
+}
+.bg-light {
+    background: var(--dal-light-gray) !important;
+}
+.text-info {
+    color: var(--dal-color-primary) !important;
+}
+.btn{
+    border-radius: var(--border-rounded);
+}
+.border-info {
+    --bs-border-opacity: 1;
+    border-color: rgba(var(--dal-color-primary-rgb), var(--bs-border-opacity)) !important;
+}
+.link-info {
+    color: RGBA(var(--dal-color-primary-rgb), var(--bs-link-opacity, 1)) !important;
+    -webkit-text-decoration-color: RGBA(var(--dal-color-primary-rgb), var(--bs-link-underline-opacity,1)) !important;
+    text-decoration-color: RGBA(var(--dal-color-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    color:var(--dal-color-icon-primary);
+}
+.link-info:focus, .link-info:hover  {
+    color: var(--dal-color-primary) !important;
+} 
+dl, ol, ul {
+    margin-bottom: unset;
+}
+header.menuOpen .pi-bars:before {
+    content: "\e90b" !important;
+}
+
+/*-------button info----*/
+.p-button-info {
+    border-color: var(--dal-color-icon-primary) !important;
+    background: var(--dal-color-icon-primary) !important;
+}
+
+.p-button-info .p-button-icon {
+    background: #ffffff;
+    /* padding: 5px; */
+    border-radius: var(--border-circle);
+    color: var(--dal-color-icon-primary);
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.p-button-info:not(:disabled):active,
+.p-button-info:not(:disabled):hover {
+    background: var(--dal-color-icon-primary-hover) !important;
+    border: 1px solid var(--dal-color-icon-primary-hover) !important;
+}
+/*-------------------------*/
+.srch-container button {
+    border-radius: var(--border-rounded) !important;
+}
+.tools .p-button-icon-only.p-button-secondary {
+    background: #fff;
+    color: #000;
+}
+/*------------------*/
+.microphone-block .overlay button {
+    background: #fff !important;
+    border-radius: calc(2*var(--border-rounded)) !important;
+}
+
+.microphone-block .overlay button:hover {
+    background: #eeeeee !important;
+}
+
+@media (max-width: 991px) {
+    .btn-toggle button,
+    .btn-toggle button:hover,
+    .btn-toggle button .pi,
+    .p-button-info:not(:disabled):active,
+    .p-button-info:not(:disabled):hover {
+        background-color: transparent !important;
+        border-color: transparent !important
+    }
+
+
+}
+
+/* ---------------------------section-------------------- */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 0.5em 0;
+    text-transform: capitalize;
+}
+
+.section-p {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    color: #7e7e7e;
+}
+
+.section {
+    padding: var(--pc-padding-container);
+}
+
+/* ------------ card -------------- */
+.card {
+    border: 1px solid #e9e9e9;
+    border-radius: var(--border-rounded);
+    margin: 1em auto;
+    background: transparent;
+}
+.col-md-4 .card {
+    height: calc(100% - 2em );
+}
+.bg-img-cnt-title {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.p-carousel-prev-button,
+.p-carousel-next-button {
+    display: none !important;
+}
+
+.p-carousel-indicator-active .p-carousel-indicator-button {
+    color: var(--dal-color-primary);
+}
+
+/*---------------------*/
+.btn-block button {
+    display: block;
+    width: 100% !important;
+
+}
+header .p-button-label ,
+.p-button-info .p-button-label{
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+}
+/*------------------------------------*/
+.p-tablist-tab-list {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.p-tabpanels {
+    background: transparent !important;
+}
+
+.p-tab {
+    border-color: transparent !important;
+    padding: 10px 20px !important;
+    background: #eeeeee !important;
+    margin-bottom: 1em !important;
+    border-radius: var(--border-rounded) !important;
+}
+
+span.p-tablist-active-bar {
+    display: none !important;
+}
+
+.p-tab-active {
+    background: #dbf263 !important;
+    color: #000 !important;
+}
+
+.p-accordionpanel,
+.p-accordionheader {
+    margin-bottom: 10px;
+    border-radius: var(--border-rounded) !important;
+
+}
+
+.p-accordioncontent-content {
+    border-radius: 0 0 var(--border-rounded) var(--border-rounded) !important;
+}
+
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active>.p-accordionheader {
+    border-radius: var(--border-rounded) var(--border-rounded) 0 0 !important;
+}
+
+@media (max-width:767px) {
+    :root {
+        --hdr-li-padding: 5px;
+        --pc-padding-container: 1em;
+        --padding-10: 5px;
+        --border-rounded: 10px;
+        --border-circle: 50%;
+    }
+
+    .h1 {
+        font-size: 2rem !important;
+    }
+
+    .plus-features {
+        width: 100%;
+    }
+
+    p-button,
+    p-button button {
+        width: 100% !important;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .card.service {
+        padding: 1em !important;
+    }
+
+    .feature-title {
+        padding: 1em !important;
+    }
+
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .support-sec .second-part {
+        display: block !important;
+        MARGIN: 1EM 0;
+    }
+
+    .integation-sec .container-fluid:after {
+        right: 0;
+        right: -6px;
+        background-size: contain;
+        top: 100px;
+        height: 55%;
+        width: 76%;
+        transform: skew(15deg, 342deg);
+        opacity: 0.05;
+        TOP: -15px;
+    }
+}
+ /* .form-control.pe-5 {
+    padding-right:3rem !important;
+} */
+/* -----select----------- */
+
+select:focus > option:checked ,
+select:focus > option:focus,
+select:focus > option:focus-visible,
+select:focus > option:focus-within,
+select:focus > option:hover{ 
+    background: #7aa9a6 !important;
+    color: #fff !important;
+  
+}
+
+.form-select:focus {
+    border-color: #7aa9a678;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(122 169 166 / 25%);
+}
+
+/* -----end select----------- */
+.bg-light nav.p-breadcrumb {
+    background: var(--dal-light-gray) !important;
+}
+
+/* ***************************************************************************************************** */
+/*------------rtl----------------------------------------------------------------------------------------*/
+
+.rtl p-carousel {
+    direction: ltr;
+}
+
+body.rtl {
+    direction: rtl;
+    font-family: 'Tajawal' !important;
+}
+
+.rtl .section-title,
+.rtl .hero-content .h1,
+.rtl p.p-hero,
+.rtl header.header nav ul li,
+.rtl .logo-text {
+    font-family: 'Tajawal' !important
+}
+
+.rtl .p-button-icon-right {
+    transform: rotate(180deg);
+}
+
+.rtl .plus-features ul li .pi-plus {
+    margin: auto auto auto 1em !important;
+}
+
+.rtl ul.wt-to-do li .pi {
+    margin-right: unset !important;
+    margin-left: 10px;
+}
+
+.rtl .integation-sec .container-fluid:after {
+    right: unset !important;
+    left: -82px;
+    transform: skew(-358deg, -339deg) !important;
+    background-position: left !important;
+}
+
+.rtl .what-include ul li .pi {
+    margin-left: 10px;
+    margin-right: unset !important;
+}
+
+.rtl .padge-price span {
+    float: left !important;
+}
+.rtl .lang-group .form-select {
+    background-position: left 0.75rem center !important;
+}
+.rtl .lang-group span.pi.pi-globe {
+    right: 14px !important;
+    left: unset !important;
+
+}
+.rtl .me-2 {
+    margin-left: .5rem !important;
+    margin-right: unset !important;
+}
+.rtl .form-control.pe-5 {
+    padding-left: 3rem !important;
+    padding-right: 1rem !important;
+}
+.rtl .show-pass .btn {
+    left: 0;
+    right: unset !important;
+}
+.rtl .pi.pi-arrow-left {
+    transform: rotate(180deg);
+}
+
+.rtl .p-breadcrumb-separator chevronrighticon {
+    transform: rotate(180deg) !important;
+}
+
+@media (max-width: 991px) {
+    .rtl .btn-toggle {
+        position: absolute;
+        left: 30px !important;
+        right: unset !important;
+    }
+}

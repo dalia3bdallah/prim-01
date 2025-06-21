@@ -1,0 +1,36 @@
+.card.service {
+    padding: 2em;
+    background: var(--dal-light-gray);
+}
+
+.card.service .service-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    FONT-WEIGHT: bold;
+}
+
+.service-sub-title {
+    min-height: 60px;
+}
+
+.service-img img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media (min-width:991px) {
+    .service-img img {
+        min-height: 250px;
+        max-height: 250px;
+        object-fit: contain;
+    }
+
+    .services .col-md-6:first-child .card.service:first-child .service-img img,
+    .services .col-md-6:last-child .card.service:last-child .service-img img {
+        max-height: 350px;
+        min-height: 350px;
+    }
+}
+.card.service:hover {
+    background: radial-gradient(var(--dal-light-gray), #ecf5c2);
+}

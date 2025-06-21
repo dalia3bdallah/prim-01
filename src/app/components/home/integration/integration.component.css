@@ -1,0 +1,25 @@
+.integation-sec .container-fluid {
+    min-height: 350px;
+    background: radial-gradient(#fdfff1 ,#ffffdc);
+    padding: calc(var(--padding-10) *2);
+    border-radius: var(--border-rounded);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.integation-sec .container-fluid:after {
+    content: "";
+    background: url(/imgs/social-icons/2.png) no-repeat right;
+    position: absolute;
+    right: 0;
+    background-size: contain;
+        right: -82px;
+    background-size: contain;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+    transform: skew(358deg, 339deg);
+    opacity: 0.3;
+}

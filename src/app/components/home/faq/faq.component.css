@@ -1,0 +1,39 @@
+.section-p.text-end{
+    justify-content: end;
+    display: flex;
+}
+section.section.faq-sec .container-fluid {
+    background: var(--dal-light-gray);
+    padding: calc(2* var(--padding-10));
+    border-radius: var(--border-rounded);
+}
+/*-------------------------------*/
+.p-accordionpanel {
+    margin-bottom: 10px;
+}
+
+.faq-sec .card {
+    border: 0px;
+    margin-top: 0;
+}
+.p-accordionpanel {
+    margin-bottom: 10px;
+        border-radius: var(--border-rounded) !important;
+}
+
+.faq-sec .card {
+    border: 0px;
+    margin-top: 0;
+}
+
+i.pi.pi-minus.ng-star-inserted ,i.pi.pi-minus {
+    background: var(--dal-color-icon-primary);
+    padding: 8px;
+    border-radius: var(--border-circle);
+    color: #fff;
+}
+
+i.pi.pi-plus {
+    padding: 8px;
+    border-radius: var(--border-circle);
+}

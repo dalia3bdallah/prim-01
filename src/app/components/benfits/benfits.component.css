@@ -1,0 +1,24 @@
+
+.benfits-sec .row {
+    display: flex;
+    flex-direction: column!important;
+}
+
+.benfits-sec .row .col-md-4 {
+    width: 100% !important;
+}
+
+.benfits-sec .row .col-md-4 .card.feature {
+    display: flex!important;
+    flex-direction: row !important;
+    align-items: center !important;
+    /* align-content: center; */
+}
+.benfits-sec .row .col-md-4 .card.feature img {
+    margin: 0 !important;
+    border-radius: var(--border-rounded) 0  0 var(--border-rounded);
+}
+
+.benfits-sec .row .col-md-4 .card.feature .feature-title {
+    padding: 0 !important;
+}

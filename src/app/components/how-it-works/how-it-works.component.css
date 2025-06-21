@@ -1,0 +1,3 @@
+.bg-light nav.p-breadcrumb {
+    background: var(--dal-light-gray) !important;
+}
