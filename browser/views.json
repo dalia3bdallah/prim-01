@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name":"Bamboo Watch",
+        "content": "Product Description",
+        "image": "/public/imgs/giphy.gif"
+    },
+    {
+        "id": 2,
+        "name":"dalia atch",
+        "content": "Product Description",
+        "image": "/public/imgs/giphy.gif"
+    }
+]
