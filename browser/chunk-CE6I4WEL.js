@@ -1,0 +1,1 @@
+import{Oa as n,fb as o,gb as r,wb as s}from"./chunk-A2HTPITR.js";var i=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["prm-register"]],decls:2,vars:0,template:function(e,m){e&1&&(o(0,"p"),s(1,"register works!"),r())},encapsulation:2})};export{i as RegisterComponent};
