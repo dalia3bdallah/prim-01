@@ -1,0 +1,143 @@
+.img-hints img {
+    width: 80px;
+    /* margin: auto; */
+    /* text-align: center; */
+    display: block;
+}
+
+.hint-block {
+    background: var(--dal-primary-light);
+    height: 100%;
+    /* border-radius: var(--border-rounded); */
+    padding: 1em;
+}
+
+.from-hints-lists ul {
+    padding: 0;
+    list-style: none;
+}
+
+.from-hints-lists ul li {
+    padding: 4px 6px;
+}
+
+.show-pass .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--dal-color-icon-primary);
+}
+
+.btn:disabled {
+    opacity: 0.3;
+}
+
+
+.from-hints-lists li.text-danger.text-success {
+    color: var(--dal-success-txt) !important;
+}
+
+.from-hints-lists li.text-danger.text-success .fa-lightbulb:before {
+    /* --fa: "\f0eb"; */
+    content: "\f00c" !important;
+    --fa: "\f00c" !important;
+}
+
+.success-img {
+    text-align: center;
+}
+
+.success-img img {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.login-done img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius:10px;;
+}
+input.form-control ,.btn  {
+    border-radius: var(--border-rounded);
+}
+
+.login img{
+    filter: hue-rotate(338deg);
+}
+input.form-control {
+    margin-bottom:var(--padding-10);
+}
+.ng-invalid.ng-touched.form-control {
+    border-color: #da334461;
+    box-shadow: 0 0 0 .25rem rgb(218 51 68 / 6%)
+}
+/* .ng-untouched.ng-pristine.ng-invalid.form-control{
+    border-color: #f3f7c6;
+} */
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--dal-primary-light);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--dal-primary-light);
+    /* box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25); */
+}
+.log-title{
+    text-transform: capitalize;
+}
+
+/* special for register page only ----------------------------------------*/
+
+/* .regs-row {
+    flex-direction: row-reverse;
+} */
+
+.section.register .cont {
+    min-height: 100vh;
+}
+.regs-row {
+    min-height: 100vh;
+}
+.regs-form {
+    padding: 2em 1em;
+}
+
+.regs-form .log-title {
+    margin-bottom: 1em;
+}
+
+/* .register-text-block {
+    padding: 1em;
+} */
+
+.hint-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2em;
+}
+.login-done img {
+    max-height: 250px;
+}
+
+.login-done  {
+    color: var(--dal-color-icon-primary);
+    text-transform: capitalize;
+    font-weight: bold !important;
+}
+
+.regs-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+.have-account {
+    margin: 1em auto;
+    font-weight: bold;
+    text-transform: capitalize;
+}

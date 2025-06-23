@@ -90,4 +90,7 @@ export class LoginComponent {
       this.stopOnLoginSuccess();
     }, 2000);
   }
+  goNew(){
+        this._route.navigate(['/register']);
+  }
 }

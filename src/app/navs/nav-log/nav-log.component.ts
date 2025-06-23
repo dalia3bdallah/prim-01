@@ -3,7 +3,7 @@ import { SharedTranslationModule } from '../../layouts/SharedTranslation.module'
 import { ButtonModule } from 'primeng/button';
 import { TranslateService } from '@ngx-translate/core';
 import { SearchModalComponent } from '../../components/search-modal/search-modal.component';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 @Component({
     selector: 'prm-nav-log',
     imports: [
@@ -11,11 +11,14 @@ import { RouterLink } from '@angular/router';
         ButtonModule,
         SearchModalComponent,
         RouterLink,
+        RouterModule 
     ],
     templateUrl: './nav-log.component.html',
     styleUrl: './nav-log.component.css',
 })
 export class NavLogComponent  {
+    isRegister:boolean=true;
+  
     // ------------------------------------------------
     @HostListener('window:scroll', [])
     onWindowScroll(): void {

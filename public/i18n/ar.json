@@ -1,5 +1,6 @@
 {
 	"logotext": "دال 19",
+	"DAL-19": "دال 19",
 	"home": "الرئيسية",
 	"benfits": "المميزات",
 	"how it works": "كيف نعمل",
@@ -134,9 +135,6 @@
 	"We provide our clients with daily updates on their business performance. This includes data on website traffic and sales": "نقدم لعملائنا تحديثات يومية حول أداء أعمالهم، بما في ذلك بيانات عن حركة مرور الموقع والمبيعات",
 	"Free Support": "دعم مجاني",
 	"We offer free support to all of our clients. This means that you can always get help when you need it, no matter what time it is": "نحن نقدم دعمًا مجانيًا لجميع عملائنا. هذا يعني أنه يمكنك دائمًا الحصول على المساعدة عند الحاجة، في أي وقت كان",
-	
-	
-	
 	"bookademo works!": "احجز عرضًا توضيحيًا يعمل!",
 	"Web ": "الويب",
 	"Modern solutions for your digital presence": "حلول عصرية لحضورك الرقمي",
@@ -160,6 +158,21 @@
 	"Social Media Marketing": "التسويق عبر وسائل التواصل الاجتماعي",
 	"Analytics & Reporting": "التحليلات والتقارير",
 	"Web Development": "تطوير الويب",
-	"What We Do?":"ماذا نفعل ؟ ",
-	"ex:" :"مثال : "
+	"What We Do?": "ماذا نفعل ؟ ",
+	"ex:": "مثال : ",
+	"register": "التسجيل",
+	"firstName": "الاسم الاول",
+	"Welcome! We're excited to have you on board. Create a new account to enjoy the full experience, unlock exclusive features, and stay updated with the latest news. Signing up is free and easy — just a few steps to get started!": "مرحبًا بك! يسعدنا انضمامك إلينا. قم بإنشاء حساب جديد لتجربة استخدام كاملة، الوصول إلى ميزات خاصة، والبقاء على اطلاع بآخر التحديثات. التسجيل مجاني وسهل — فقط بضع خطوات ونبدأ!",
+	"lastName": "الاسم الاخير",
+	"your new account created successfully": "تم انشاء حساب جديد بنجاح ",
+	"Redirecting to Home page in seconds": "جارى تحويلك للصفحة الرئيسية خلال ثوانى ",
+	"lets create a new account !":" دعنا ننشىء حساب جديد الآن!",
+    "It will take seconds.": "سيكلفك الامر فقط ثوانى قليلة.",
+	"Go Back":"الرجوع للصفحة السابقة",
+	"have an account ?" :"هل تمتلك حساب لدينا ؟" ,
+    "signin": "تسجيل الدخول",
+	"create new account" :"انشىء حساب جديد",
+    "signup": "التسجيل"
+
+	
 }

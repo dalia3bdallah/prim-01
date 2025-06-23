@@ -1,0 +1,4 @@
+.log-layout:has(.register)  .header ,
+.log-layout:has(.register)  footer {
+        display: none !important;
+}

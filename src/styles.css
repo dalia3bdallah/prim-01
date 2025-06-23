@@ -305,6 +305,10 @@ select:focus > option:hover{
     background: var(--dal-light-gray) !important;
 }
 
+.log-layout:has(.register)  .header ,
+.log-layout:has(.register)  footer {
+        display: none !important;
+}
 /* ***************************************************************************************************** */
 /*------------rtl----------------------------------------------------------------------------------------*/
 

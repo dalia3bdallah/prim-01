@@ -21,7 +21,7 @@ export class ClientViewsComponent {
       pos: 'ABC Group CEO',
       content:
         'this tool Increased Conversions by 40% with Al Product Description',
-      image: '/imgs/reviews/t5.png',
+      image: 'imgs/reviews/t5.png',
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export class ClientViewsComponent {
       pos: 'ABC Group CEO',
       content:
         'Description this tool Increased Conversions by 40% with Al Product Description this tool Increased Conversions by 40% with Al Product Description',
-      image: '/imgs/reviews/t2.png',
+      image: 'imgs/reviews/t2.png',
     },
   ];
 

@@ -71,7 +71,7 @@ p.p-hero {
 
 .bg-img-container {
     margin: 1em auto;
-    background: url(/imgs/hero.jpg);
+    background: url(imgs/hero.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

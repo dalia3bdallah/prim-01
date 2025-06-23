@@ -84,3 +84,19 @@ input.form-control {
     box-shadow: 0 0 0 .25rem var(--dal-primary-light);
     /* box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25); */
 }
+.log-title{
+    text-transform: capitalize;
+}
+.have-account {
+    margin: 1em auto;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.login-done  {
+    color: var(--dal-color-icon-primary);
+    text-transform: capitalize;
+    font-weight: bold !important;
+}
+.login-done img {
+    max-height: 250px;
+}

@@ -41,6 +41,10 @@ export const routes: Routes = [
         {path:"register",
             loadComponent:()=>import("./logs/register/register.component").then((c)=>c.RegisterComponent),
             title:"register"
+        },
+        {path:"book-demo",
+            loadComponent:()=>import("./components/bookademo/bookademo.component").then((c)=>c.BookademoComponent),
+            title:"book A Demo "
         }
         ]
     },
