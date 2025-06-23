@@ -55,7 +55,7 @@ section.section.client-views .container-fluid {
 
 .bg-img-container {
     margin: 1em auto;
-    background: linear-gradient(0deg, #000000cc 23%, #0023224a 43%), url(imgs/hero.jpg);
+    background: linear-gradient(0deg, #000000cc 23%, #0023224a 43%), url('/assets/imgs/hero.jpg');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
