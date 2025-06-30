@@ -166,13 +166,67 @@
 	"lastName": "الاسم الاخير",
 	"your new account created successfully": "تم انشاء حساب جديد بنجاح ",
 	"Redirecting to Home page in seconds": "جارى تحويلك للصفحة الرئيسية خلال ثوانى ",
-	"lets create a new account !":" دعنا ننشىء حساب جديد الآن!",
-    "It will take seconds.": "سيكلفك الامر فقط ثوانى قليلة.",
-	"Go Back":"الرجوع للصفحة السابقة",
-	"have an account ?" :"هل تمتلك حساب لدينا ؟" ,
-    "signin": "تسجيل الدخول",
-	"create new account" :"انشىء حساب جديد",
-    "signup": "التسجيل"
+	"lets create a new account !": " دعنا ننشىء حساب جديد الآن!",
+	"It will take seconds.": "سيكلفك الامر فقط ثوانى قليلة.",
+	"Go Back": "الرجوع للصفحة السابقة",
+	"have an account ?": "هل تمتلك حساب لدينا ؟",
+	"signin": "تسجيل الدخول",
+	"create new account": "انشىء حساب جديد",
+	"signup": "التسجيل",
+	"prices": "الاسعار",
+	"error page!": "! خطأ فى الصفحة",
+	"login": "تسجيل الدخول",
+	"dashboard" :"لوحة المؤشرات",
+	"book A Demo": "رتب تجربة معنا",
+	"TITLE": "مخطط المبيعات الشهري",
+	"name": "مبيعاتنا ",
+	"Monthly Sales Chart": "مخطط المبيعات الشهري",
+	"our sales": "مبيعاتنا ",
+	"CHART": {
+		"TITLE": "مخطط المبيعات الشهري",
+		"SERIES_NAME": "المبيعات",
+		"MONTHS": {
+			"JAN": "يناير",
+			"FEB": "فبراير",
+			"MAR": "مارس",
+			"APR": "أبريل",
+			"MAY": "مايو",
+			"JUN": "يونيو",
+			"JUL": "يوليو",
+			"AUG": "أغسطس",
+			"SEP": "سبتمبر"
+		}
+	},
 
+
+	"At least one : number,lowercase letter,uppercase letter,special character ( @ # $ % ^ & ! * )": "يجب أن تحتوي على واحد على الأقل من: رقم، حرف صغير، حرف كبير، رمز خاص ( @ # $ % ^ & ! * )",
 	
+	"at least 8 characters": "على الأقل 8 أحرف",
+	"Maximum characters 15 characters": "الحد الأقصى 15 حرفًا",
+	
+	"At least one number": "يجب أن تحتوي على رقم واحد على الأقل",
+	"At least one uppercase letter": "يجب أن تحتوي على حرف كبير واحد على الأقل",
+	"At least one lowercase letter": "يجب أن تحتوي على حرف صغير واحد على الأقل",
+	"At least one special character ( @ # $ % ^ & ! * )": "يجب أن تحتوي على رمز خاص واحد على الأقل ( @ # $ % ^ & ! * )",
+	"contain at least 8 characters": "يجب أن تحتوي على 8 أحرف على الأقل",
+	"contain maximum": "تحتوي على حد أقصى",
+	"characters": "أحرف",
+	
+	"book a demo works !": "حجز العرض التوضيحي يعمل!",
+	"coming soon !": "قريبًا!",
+	"The page is under construction and modification": "الصفحة قيد الإنشاء والتعديل",
+
+	"CHART.TITLE": "عنوان الرسم البياني",
+	"CHART.SERIES_NAME": "اسم السلسلة",
+	"CHART.MONTHS.JAN": "يناير",
+	"CHART.MONTHS.FEB": "فبراير",
+	"CHART.MONTHS.MAR": "مارس",
+	"CHART.MONTHS.APR": "أبريل",
+	"CHART.MONTHS.MAY": "مايو",
+	"CHART.MONTHS.JUN": "يونيو",
+	"CHART.MONTHS.JUL": "يوليو",
+	"CHART.MONTHS.AUG": "أغسطس",
+	"CHART.MONTHS.SEP": "سبتمبر"
+
+
 }

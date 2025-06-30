@@ -1,0 +1,17 @@
+{
+    "CHART": {
+		"TITLE": "Monthly sales chart",
+		"SERIES_NAME": "our sales",
+		"MONTHS": {
+			"JAN": "JAN",
+			"FEB": "FEB",
+			"MAR": "MAR",
+			"APR": "APR",
+			"MAY": "MAY",
+			"JUN": "JUN",
+			"JUL": "JUL",
+			"AUG": "AUG",
+			"SEP": "SEP"
+		}
+	}
+}
