@@ -226,7 +226,13 @@
 	"CHART.MONTHS.JUN": "يونيو",
 	"CHART.MONTHS.JUL": "يوليو",
 	"CHART.MONTHS.AUG": "أغسطس",
-	"CHART.MONTHS.SEP": "سبتمبر"
+	"CHART.MONTHS.SEP": "سبتمبر",
+
+
+	"Search results :" : "نتائج البحث:" ,
+"It appears there are no results!" : "يبدو أنه لا توجد نتائج!" ,
+"Sorry, there are no search results similar to the words you entered in the search field." : "عذرًا، لا توجد نتائج بحث مشابهة للكلمات التي أدخلتها في حقل البحث." ,
+"You can search again with more relevant words, and we can help you." : "يمكنك البحث مجددًا بكلمات أكثر صلة، وسنساعدك." 
 
 
 }
