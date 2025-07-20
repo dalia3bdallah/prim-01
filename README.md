@@ -5,7 +5,27 @@ I decided to recreate it using Angular as a personal learning project.
 
 I used tools like:-
 
-HTML, CSS, JavaScript, Angular, Typescript, Bootstrap, Angular Material, PrimeNG…
+
+Angular 19,
+
+PrimeNG,
+
+NGX-translate,
+
+Angular Material,
+
+Reactive forms ,
+
+Bootstrap 5,
+
+Typescript,
+
+HTML, 
+
+CSS
+
+------------------------------------------------------------------
+
 
 The original design was created by [Iman Uddin bhuiyan] https://www.behance.net/imanuddin from Bangladesh.
 
@@ -15,6 +35,10 @@ This project is for educational purposes only. I do not own the original design.
 
 All rights go to the original designer.
 
+------------------------------------------------------------------
+
+
+
 
 
 
@@ -23,7 +47,27 @@ All rights go to the original designer.
 
 قررت تنفيذه باستخدام Angular كجزء من تدريبي الشخصي على تطوير الواجهات باستخدام ادوات مثل :
 
-HTML, CSS, JavaScript, Angular, Typescript, Bootstrap, Angular Material, PrimeNG…
+Angular 19,
+
+PrimeNG,
+
+NGX-translate,
+
+Angular Material,
+
+Reactive forms ,
+
+Bootstrap 5,
+
+Typescript,
+
+HTML, 
+
+CSS
+
+------------------------------------------------------------------
+
+
 
 هذا المشروع هو محاولة لإعادة تنفيذ تصميم واجهة مستخدم رأيته على منصة Behance، باستخدام Angular 19.
 
