@@ -115,7 +115,7 @@
 	"contain maximum 10 characters": "يجب ألا يتجاوز 10 أحرف",
 	"E-Mail must": "يجب إدخال بريد إلكتروني",
 	"Email is Required, can not be empty": "البريد الإلكتروني مطلوب ولا يمكن أن يكون فارغًا",
-	"the mail must be valid like(address[at]example.com)": "يجب أن يكون البريد الإلكتروني صالحًا مثل (address@example.com)",
+	"the mail must be valid like(address@example.com)": "يجب أن يكون البريد الإلكتروني صالحًا مثل (address@example.com)",
 	"has a pattern like (123asd)|(3-5 numbers then 3-5 a-z)": "يجب أن يتبع النمط مثل (123asd) أو (3 إلى 5 أرقام ثم 3 إلى 5 أحرف صغيرة)",
 	"contain the pattern from 3 to 5 (0-9 characters) then containfrom 3 to 5 ((a-z) or (A-Z)characters)": "يجب أن يحتوي على 3 إلى 5 أرقام (0-9) ثم 3 إلى 5 أحرف (a-z أو A-Z)",
 	"username valid": "اسم المستخدم صالح",
@@ -200,10 +200,10 @@
 
 
 	"At least one : number,lowercase letter,uppercase letter,special character ( @ # $ % ^ & ! * )": "يجب أن تحتوي على واحد على الأقل من: رقم، حرف صغير، حرف كبير، رمز خاص ( @ # $ % ^ & ! * )",
-	
+
 	"at least 8 characters": "على الأقل 8 أحرف",
 	"Maximum characters 15 characters": "الحد الأقصى 15 حرفًا",
-	
+
 	"At least one number": "يجب أن تحتوي على رقم واحد على الأقل",
 	"At least one uppercase letter": "يجب أن تحتوي على حرف كبير واحد على الأقل",
 	"At least one lowercase letter": "يجب أن تحتوي على حرف صغير واحد على الأقل",
@@ -211,7 +211,7 @@
 	"contain at least 8 characters": "يجب أن تحتوي على 8 أحرف على الأقل",
 	"contain maximum": "تحتوي على حد أقصى",
 	"characters": "أحرف",
-	
+
 	"book a demo works !": "حجز العرض التوضيحي يعمل!",
 	"coming soon !": "قريبًا!",
 	"The page is under construction and modification": "الصفحة قيد الإنشاء والتعديل",
@@ -232,7 +232,13 @@
 	"Search results :" : "نتائج البحث:" ,
 "It appears there are no results!" : "يبدو أنه لا توجد نتائج!" ,
 "Sorry, there are no search results similar to the words you entered in the search field." : "عذرًا، لا توجد نتائج بحث مشابهة للكلمات التي أدخلتها في حقل البحث." ,
-"You can search again with more relevant words, and we can help you." : "يمكنك البحث مجددًا بكلمات أكثر صلة، وسنساعدك." 
+"You can search again with more relevant words, and we can help you." : "يمكنك البحث مجددًا بكلمات أكثر صلة، وسنساعدك.",
 
+"must contain the @ symbol": "يجب أن يحتوي البريد الإلكتروني على رمز @" ,
+"must include at least one dot (.)" :"يجب أن يحتوي البريد الإلكتروني على نقطة (.) واحدة على الأقل",
+"must end with a valid extension like .com, .net, or .org":"يجب أن ينتهي البريد الإلكتروني بامتداد صحيح مثل .com أو .net أو .org",
+"First Name must" :"يجب أن يحتوي الاسم الأول على",
+"Last Name must" :"يجب أن يحتوي الاسم الأخير على",
+"Let us help you register correct and faster !": "دعنا نساعدك على التسجيل بشكل صحيح وسريع!"
 
 }
